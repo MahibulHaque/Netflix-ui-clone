@@ -1,0 +1,25 @@
+.nav__logo{
+    position: fixed;
+    top: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100vw;
+    height: 70px;
+    z-index: 1;
+    transition: all 250ms cubic-bezier(0.47, 0, 0.745, 0.715) 0s;
+}
+.nav__logo img{
+    height: 60%;
+    width: auto;
+    margin-left: 5%;
+}
+.profile__image{
+    margin-left: 0;
+    margin-right: 5%;
+    cursor: pointer;
+    border-radius:50%;
+}
+.nav__black{
+    background-color: #111;
+}

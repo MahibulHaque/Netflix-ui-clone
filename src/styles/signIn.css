@@ -1,0 +1,71 @@
+.signIn {
+  object-fit: contain;
+  height: 100vh;
+}
+.nav__signIn {
+  z-index: 1;
+  position: fixed;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  height: 100px;
+}
+.nav__signIn img {
+  height: 48%;
+  width: auto;
+  margin-inline: 60px;
+}
+.nav__signIn button {
+  background-color: #f40612;
+  color: white;
+  font-size: 1rem;
+  font-weight: 400;
+  margin-inline: 60px;
+  padding: 7px 17px;
+  border: none;
+  outline: none;
+  border-radius: 3px;
+  cursor: pointer;
+}
+.gradient {
+  position: absolute;
+  background: rgba(0, 0, 0, 0.5);
+  background-image: linear-gradient(
+      to top,
+      rgba(0, 0, 0, 0) 50%,
+      rgba(0, 0, 0, 0.7) 100%
+    ),
+    radial-gradient(50% 100%, rgba(0, 0, 0, 0) 50%, rgba(0, 0, 0, 0.7) 100%);
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+}
+.info__signup{
+    display: flex;
+    height: fit-content;
+    width: 90%;
+    position: fixed;
+    z-index: 1;
+    top: 50%;
+    left: 50%;
+    max-width: 800px;
+    flex-direction: column;
+    color: white;
+    transform: translate(-50%,-50%);
+    text-align: center;
+}
+.info__signup h1{
+    font-weight: 700;
+    font-size: clamp(3rem,3.5vw,12rem);
+}
+.info__signup h2{
+    margin-top: 20px;
+    margin-bottom: 30px;
+    font-weight: 400;
+}
+.info__signup p{
+    font-size: 1.25rem;
+    font-weight: 400;
+}

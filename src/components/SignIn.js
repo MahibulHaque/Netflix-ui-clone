@@ -5,6 +5,7 @@ import { onAuthStateChanged } from "@firebase/auth";
 import "../styles/signIn.css";
 
 const SignIn = ({ setUser }) => {
+  console.log(process.env.REACT_APP_FIREBASE_API_KEY)
   onAuthStateChanged(auth, (currentUser) => {
     setUser(currentUser);
   });

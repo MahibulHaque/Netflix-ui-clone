@@ -4,10 +4,10 @@ import requests from "../requests";
 import Banner from "../components/Banner.js";
 import Navbar from "../components/Navbar.js";
 
-const LoggedIn = ({user,setIsUserSignedIn}) => {
+const LoggedIn = ({user,setUser}) => {
   return (
       <div className="App">
-        <Navbar user={user} setIsUserSignedIn={setIsUserSignedIn}/>
+        <Navbar user={user} setUser={setUser}/>
         <Banner />
         <Row
           title="Netflix Originals"

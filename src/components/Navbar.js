@@ -3,13 +3,13 @@ import React, { useState, useEffect } from "react";
 import "../styles/Navbar.css";
 import { auth } from "../Firebase/firebase";
 
-const Navbar = ({ user, setIsUserSignedIn }) => {
+const Navbar = ({ user, setUser }) => {
   const profileImage = user?.photoURL;
   const [show, handleShow] = useState(false);
   const handleLogout = () => {
     signOut(auth)
       .then(() => {
-        setIsUserSignedIn(false)
+        setUser(null)
       })
       .catch((err) => {
         console.log(err);

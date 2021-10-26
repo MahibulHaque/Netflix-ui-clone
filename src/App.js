@@ -6,14 +6,13 @@ import LoggedIn from "./Pages/LoggedIn";
 import SignIn from "./components/SignIn";
 
 function App() {
-  const [isUserSignIn, setIsUserSignedIn] = useState(false);
-  const [user,setUser] = useState()
+  const [user,setUser] = useState(null)
 
-  if (isUserSignIn === false) {
+  if (user===null) {
     return (
       <Router>
         <Switch>
-          <Route exact path="/"><SignIn setIsUserSignedIn={setIsUserSignedIn} setUser={setUser}/></Route>
+          <Route exact path="/"><SignIn user={user} setUser={setUser}/></Route>
         </Switch>
       </Router>
     );
@@ -21,7 +20,7 @@ function App() {
     return (
       <Router>
         <Switch>
-          <Route exact path="/"><LoggedIn user={user} setIsUserSignedIn={setIsUserSignedIn}/></Route>
+          <Route exact path="/"><LoggedIn user={user} /></Route>
         </Switch>
       </Router>
     );
